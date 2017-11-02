@@ -1,0 +1,37 @@
+html, h1, body {
+  margin: 0;
+  padding: 0;
+  background-color: #bbb;
+}
+
+.wraper {
+  background-color: #007;
+}
+
+.header {
+  background-color: #0f0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 3px solid black;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.main-header {
+  background-color: pink;
+}
+
+.color-box {
+  background-color: #f55;
+  display: inline-block;
+  height: 200px;
+  width: 100px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+
+.box-input {
+  box-sizing: border-box;
+  max-width: 80%;
+}
