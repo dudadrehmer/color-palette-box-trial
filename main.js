@@ -22,8 +22,7 @@ function addBox(e){
   var box = document.createElement('div');
   // add classes
   box.className = 'color-box';
-  console.log(box);
-
+  
   //create color input
   var colorInput = document.createElement('input');
   // add classes
@@ -48,6 +47,11 @@ function addBox(e){
 
 // Remove Color Box
 
-function removeBox(){
-  
+function removeBox(e){
+  if(e.target.classList.contains('close-btn')){
+    if(confirm('Remove this color from palette?')){
+      var box = e.target.parentElement;
+      palette.removeChild(box);
+    }
+  }
 };
